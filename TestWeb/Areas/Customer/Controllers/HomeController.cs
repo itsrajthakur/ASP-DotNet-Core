@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TestWeb.Models;
+using DemoWeb.Models;
 
-namespace TestWeb.Controllers
+namespace DemoWeb.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
